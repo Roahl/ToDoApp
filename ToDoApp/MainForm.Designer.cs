@@ -36,7 +36,7 @@
             this.btnPurple = new System.Windows.Forms.Button();
             this.btnGreen = new System.Windows.Forms.Button();
             this.btnBlue = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbListName = new System.Windows.Forms.Label();
             this.btnOrange = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -59,10 +59,11 @@
             // 
             // splitContainer1.Panel2
             // 
+            this.splitContainer1.Panel2.BackColor = System.Drawing.SystemColors.Control;
             this.splitContainer1.Panel2.Controls.Add(this.btnPurple);
             this.splitContainer1.Panel2.Controls.Add(this.btnGreen);
             this.splitContainer1.Panel2.Controls.Add(this.btnBlue);
-            this.splitContainer1.Panel2.Controls.Add(this.label1);
+            this.splitContainer1.Panel2.Controls.Add(this.lbListName);
             this.splitContainer1.Panel2.Controls.Add(this.btnOrange);
             this.splitContainer1.Size = new System.Drawing.Size(826, 544);
             this.splitContainer1.SplitterDistance = 217;
@@ -113,12 +114,14 @@
             // 
             this.btnPurple.FlatAppearance.BorderSize = 0;
             this.btnPurple.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPurple.ForeColor = System.Drawing.Color.White;
             this.btnPurple.Image = global::ToDoApp.Properties.Resources.purple;
             this.btnPurple.Location = new System.Drawing.Point(129, 10);
             this.btnPurple.Name = "btnPurple";
             this.btnPurple.Size = new System.Drawing.Size(36, 34);
             this.btnPurple.TabIndex = 8;
             this.btnPurple.UseVisualStyleBackColor = true;
+            this.btnPurple.Click += new System.EventHandler(this.btnColor_Click);
             // 
             // btnGreen
             // 
@@ -130,6 +133,7 @@
             this.btnGreen.Size = new System.Drawing.Size(36, 34);
             this.btnGreen.TabIndex = 7;
             this.btnGreen.UseVisualStyleBackColor = true;
+            this.btnGreen.Click += new System.EventHandler(this.btnColor_Click);
             // 
             // btnBlue
             // 
@@ -141,15 +145,16 @@
             this.btnBlue.Size = new System.Drawing.Size(36, 34);
             this.btnBlue.TabIndex = 6;
             this.btnBlue.UseVisualStyleBackColor = true;
+            this.btnBlue.Click += new System.EventHandler(this.btnColor_Click);
             // 
-            // label1
+            // lbListName
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("MS Reference Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(171, 12);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 26);
-            this.label1.TabIndex = 5;
+            this.lbListName.AutoSize = true;
+            this.lbListName.Font = new System.Drawing.Font("MS Reference Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbListName.Location = new System.Drawing.Point(171, 12);
+            this.lbListName.Name = "lbListName";
+            this.lbListName.Size = new System.Drawing.Size(0, 26);
+            this.lbListName.TabIndex = 5;
             // 
             // btnOrange
             // 
@@ -161,6 +166,7 @@
             this.btnOrange.Size = new System.Drawing.Size(36, 34);
             this.btnOrange.TabIndex = 1;
             this.btnOrange.UseVisualStyleBackColor = true;
+            this.btnOrange.Click += new System.EventHandler(this.btnColor_Click);
             // 
             // MainForm
             // 
@@ -188,7 +194,7 @@
         private System.Windows.Forms.Button btnOrange;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbListName;
         private System.Windows.Forms.Button btnPurple;
         private System.Windows.Forms.Button btnGreen;
         private System.Windows.Forms.Button btnBlue;
