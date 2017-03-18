@@ -26,20 +26,22 @@ namespace ToDoApp
         private void listSelection(object sender, EventArgs e)
         {
             String name = listBox1.GetItemText(listBox1.SelectedItem);
-            lbListName.Text = name;
-            lbListName.ForeColor = ORANGE;
-            foreach(Control c in splitContainer1.Panel2.Controls)
+            lbListName.Text = name; 
+            foreach (Control c in splitContainer1.Panel2.Controls)
             {
                 if (c.GetType() == typeof(ToDoTable))
                 {
+                    string color = ((ToDoTable)c).returnColor();
                     if (c.Name.CompareTo(name) == 0)
                     {
+                        
+                        recolor(color);
                         c.Visible = true;
                     }
                     else
-                        c.Visible = false;
+                        c.Visible = false;  
                 }
-            }
+            }            
         }
 
         private void newToDoList(object sender, EventArgs e)
@@ -63,20 +65,15 @@ namespace ToDoApp
             {
                 case "btnOrange":
                     selectedColor = "orange";
-                    
-                    lbListName.ForeColor = ORANGE;
                     break;
                 case "btnGreen":
                     selectedColor = "green";
-                    lbListName.ForeColor = GREEN;
                     break;
                 case "btnBlue":
                     selectedColor = "blue";
-                    lbListName.ForeColor = BLUE;
                     break;
                 case "btnPurple":
                     selectedColor = "purple";
-                    lbListName.ForeColor = PURPLE;
                     break;
             }
             recolor(selectedColor);
@@ -95,6 +92,11 @@ namespace ToDoApp
                     }
                 }
             }
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ToDoUserControl</name>
+    </assembly>
+    <members>
+        <member name="F:ToDoUserControl.Form1.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ToDoUserControl.Form1.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ToDoUserControl.Form1.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:ToDoUserControl.Program.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+        <member name="T:ToDoUserControl.ToDoTable">
+            <summary>
+            UserControl that creates a To Do table capable of adding rows through an included button, as well as changing color and enabling or disabling text
+            </summary>
+        </member>
+        <member name="M:ToDoUserControl.ToDoTable.#ctor">
+            <summary>
+            Basic constructor
+            </summary>
+        </member>
+        <member name="M:ToDoUserControl.ToDoTable.AddRow(System.Object,System.EventArgs)">
+            <summary>
+            Method called when plus button is pressed, adds a new row to the TableLayoutPanel and adds
+            a user controls to it dynamically
+            </summary>
+            <param name="sender">Plus button</param>
+            <param name="e">Arguments of the event</param>
+        </member>
+        <member name="M:ToDoUserControl.ToDoTable.evento(System.Object,System.EventArgs)">
+            <summary>
+            Method called when a checkbox in any row is changed from unchecked to checked or viceversa
+            to change the textbox next to it form enabled to disabled or viceversa
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ToDoUserControl.ToDoTable.changeColor(System.String)">
+            <summary>
+            Method that changes the forecolor of every textbox present on the usercontrol
+            </summary>
+            <param name="color">Color the text should change into</param>
+            <returns>Returns the Color that the TextBoxes are in, for future use</returns>
+        </member>
+        <member name="M:ToDoUserControl.ToDoTable.returnColor">
+            <summary>
+            Simple method to return the color of the textboxes
+            </summary>
+            <returns>String that corresponds to the Color of the textboxes</returns>
+        </member>
+        <member name="F:ToDoUserControl.ToDoTable.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ToDoUserControl.ToDoTable.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ToDoUserControl.ToDoTable.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:ToDoUserControl.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:ToDoUserControl.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:ToDoUserControl.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:ToDoUserControl.Properties.Resources.add">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+    </members>
+</doc>
