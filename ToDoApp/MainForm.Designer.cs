@@ -32,11 +32,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.splitContainerMain = new System.Windows.Forms.SplitContainer();
             this.btnAdd = new System.Windows.Forms.Button();
-            this.btnSearch = new System.Windows.Forms.Button();
-            this.listBoxLists = new System.Windows.Forms.ListBox();
+            this.listBox = new System.Windows.Forms.ListBox();
             this.cmList = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.ctsmiDelete = new System.Windows.Forms.ToolStripMenuItem();
-            this.tbSearch = new System.Windows.Forms.TextBox();
+            this.todoListPanel = new System.Windows.Forms.Panel();
             this.btnPurple = new System.Windows.Forms.Button();
             this.btnGreen = new System.Windows.Forms.Button();
             this.btnBlue = new System.Windows.Forms.Button();
@@ -70,18 +69,19 @@
             // splitContainerMain
             // 
             resources.ApplyResources(this.splitContainerMain, "splitContainerMain");
+            this.splitContainerMain.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
             this.splitContainerMain.Name = "splitContainerMain";
             // 
             // splitContainerMain.Panel1
             // 
+            this.splitContainerMain.Panel1.BackColor = System.Drawing.SystemColors.Control;
             this.splitContainerMain.Panel1.Controls.Add(this.btnAdd);
-            this.splitContainerMain.Panel1.Controls.Add(this.btnSearch);
-            this.splitContainerMain.Panel1.Controls.Add(this.listBoxLists);
-            this.splitContainerMain.Panel1.Controls.Add(this.tbSearch);
+            this.splitContainerMain.Panel1.Controls.Add(this.listBox);
             // 
             // splitContainerMain.Panel2
             // 
             this.splitContainerMain.Panel2.BackColor = System.Drawing.SystemColors.Control;
+            this.splitContainerMain.Panel2.Controls.Add(this.todoListPanel);
             this.splitContainerMain.Panel2.Controls.Add(this.btnPurple);
             this.splitContainerMain.Panel2.Controls.Add(this.btnGreen);
             this.splitContainerMain.Panel2.Controls.Add(this.btnBlue);
@@ -98,24 +98,14 @@
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.newToDoList);
             // 
-            // btnSearch
+            // listBox
             // 
-            this.btnSearch.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.btnSearch, "btnSearch");
-            this.btnSearch.Image = global::ToDoApp.Properties.Resources.search1;
-            this.btnSearch.Name = "btnSearch";
-            this.tt.SetToolTip(this.btnSearch, resources.GetString("btnSearch.ToolTip"));
-            this.btnSearch.UseVisualStyleBackColor = true;
-            // 
-            // listBoxLists
-            // 
-            this.listBoxLists.BackColor = System.Drawing.SystemColors.Control;
-            this.listBoxLists.ContextMenuStrip = this.cmList;
-            this.listBoxLists.FormattingEnabled = true;
-            resources.ApplyResources(this.listBoxLists, "listBoxLists");
-            this.listBoxLists.Name = "listBoxLists";
-            this.tt.SetToolTip(this.listBoxLists, resources.GetString("listBoxLists.ToolTip"));
-            this.listBoxLists.SelectedIndexChanged += new System.EventHandler(this.listSelection);
+            resources.ApplyResources(this.listBox, "listBox");
+            this.listBox.BackColor = System.Drawing.SystemColors.Control;
+            this.listBox.ContextMenuStrip = this.cmList;
+            this.listBox.FormattingEnabled = true;
+            this.listBox.Name = "listBox";
+            this.listBox.SelectedIndexChanged += new System.EventHandler(this.listSelection);
             // 
             // cmList
             // 
@@ -131,11 +121,11 @@
             resources.ApplyResources(this.ctsmiDelete, "ctsmiDelete");
             this.ctsmiDelete.Click += new System.EventHandler(this.deleteToDoList);
             // 
-            // tbSearch
+            // todoListPanel
             // 
-            resources.ApplyResources(this.tbSearch, "tbSearch");
-            this.tbSearch.Name = "tbSearch";
-            this.tt.SetToolTip(this.tbSearch, resources.GetString("tbSearch.ToolTip"));
+            resources.ApplyResources(this.todoListPanel, "todoListPanel");
+            this.todoListPanel.BackColor = System.Drawing.SystemColors.Control;
+            this.todoListPanel.Name = "todoListPanel";
             // 
             // btnPurple
             // 
@@ -307,7 +297,6 @@
             this.MainMenuStrip = this.ms1;
             this.Name = "MainForm";
             this.splitContainerMain.Panel1.ResumeLayout(false);
-            this.splitContainerMain.Panel1.PerformLayout();
             this.splitContainerMain.Panel2.ResumeLayout(false);
             this.splitContainerMain.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerMain)).EndInit();
@@ -325,10 +314,8 @@
         #endregion
 
         private System.Windows.Forms.SplitContainer splitContainerMain;
-        private System.Windows.Forms.ListBox listBoxLists;
-        private System.Windows.Forms.TextBox tbSearch;
+        private System.Windows.Forms.ListBox listBox;
         private System.Windows.Forms.Button btnOrange;
-        private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Label lbListName;
         private System.Windows.Forms.Button btnPurple;
@@ -352,6 +339,7 @@
         private System.Windows.Forms.ContextMenuStrip cmList;
         private System.Windows.Forms.ToolStripMenuItem ctsmiDelete;
         private System.Windows.Forms.ToolTip tt;
+        private System.Windows.Forms.Panel todoListPanel;
     }
 }
 

@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ToDoUserControl;
@@ -25,21 +27,27 @@ namespace ToDoApp
 
         private void listSelection(object sender, EventArgs e)
         {
-            String name = listBoxLists.GetItemText(listBoxLists.SelectedItem);
+            String name = listBox.GetItemText(listBox.SelectedItem);
             lbListName.Text = name; 
             foreach (Control c in splitContainerMain.Panel2.Controls)
             {
-                if (c.GetType() == typeof(ToDoTable))
+                if (c.GetType() == typeof(Panel))
                 {
-                    string color = ((ToDoTable)c).returnColor();
-                    if (c.Name.CompareTo(name) == 0)
+                    foreach (Control cc in c.Controls)
                     {
-                        
-                        recolor(color);
-                        c.Visible = true;
+                        if (cc.GetType() == typeof(ToDoTable))
+                        {
+                            string color = ((ToDoTable)cc).returnColor();
+                            if (cc.Name.CompareTo(name) == 0)
+                            {
+
+                                recolor(color);
+                                cc.Visible = true;
+                            }
+                            else
+                                cc.Visible = false;
+                        }
                     }
-                    else
-                        c.Visible = false;  
                 }
             }            
         }
@@ -51,11 +59,12 @@ namespace ToDoApp
             if(result == DialogResult.OK)
             {
                 String name = nd.name + " - " + nd.date;
-                listBoxLists.Items.Add(name);
-                listBoxLists.SelectedIndex = listBoxLists.Items.Count-1;
-                splitContainerMain.Panel2.Controls.Add(new ToDoTable() {Name = name,
-                    Location = new Point(3, 41),
-                    Size = new Size(600, 498) });
+                listBox.Items.Add(name);
+                listBox.SelectedIndex = listBox.Items.Count-1;
+                todoListPanel.Controls.Add(new ToDoTable() { Name = name,
+                    Size = new Size(606, 503),
+                    Location = new Point(0,0),
+                    Dock = DockStyle.Fill });
             }
         }
 
@@ -102,14 +111,20 @@ namespace ToDoApp
 
         private void recolor(string color)
         {
-            String name = listBoxLists.GetItemText(listBoxLists.SelectedItem);
+            String name = listBox.GetItemText(listBox.SelectedItem);
             foreach (Control c in splitContainerMain.Panel2.Controls)
             {
-                if (c.GetType() == typeof(ToDoTable))
+                if (c.GetType() == typeof(Panel))
                 {
-                    if (c.Name.CompareTo(name) == 0)
+                    foreach (Control cc in c.Controls)
                     {
-                       ((ToDoTable)c).changeColor(color);
+                        if (cc.GetType() == typeof(ToDoTable))
+                        {
+                            if (cc.Name.CompareTo(name) == 0)
+                            {
+                                ((ToDoTable)cc).changeColor(color);
+                            }
+                        }
                     }
                 }
             }
@@ -117,10 +132,18 @@ namespace ToDoApp
 
         private void deleteToDoList(object sender, EventArgs e)
         {
-            listBoxLists.Items.Remove(listBoxLists.SelectedItem);
+            listBox.Items.Remove(listBox.SelectedItem);
         }
 
         private void tsmiEnglish_Click(object sender, EventArgs e)
+        {
+            Thread.CurrentThread.CurrentCulture = new CultureInfo("en");
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("en");
+            Controls.Clear();
+            InitializeComponent();
+        }
+
+        private void search(object sender, KeyEventArgs e)
         {
 
         }

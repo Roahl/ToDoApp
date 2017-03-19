@@ -117,16 +117,23 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="splitContainerMain.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="splitContainerMain.IsSplitterFixed" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="splitContainerMain.Location" type="System.Drawing.Point, System.Drawing">
     <value>1, 57</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnAdd.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
   <data name="btnAdd.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 35</value>
+    <value>8, 0</value>
   </data>
   <data name="btnAdd.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -134,7 +141,6 @@
   <data name="btnAdd.Size" type="System.Drawing.Size, System.Drawing">
     <value>30, 23</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnAdd.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
@@ -156,32 +162,8 @@
   <data name="&gt;&gt;btnAdd.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="btnSearch.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btnSearch.Location" type="System.Drawing.Point, System.Drawing">
-    <value>175, 10</value>
-  </data>
-  <data name="btnSearch.Size" type="System.Drawing.Size, System.Drawing">
-    <value>28, 23</value>
-  </data>
-  <data name="btnSearch.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="btnSearch.ToolTip" xml:space="preserve">
-    <value>Buscar lista</value>
-  </data>
-  <data name="&gt;&gt;btnSearch.Name" xml:space="preserve">
-    <value>btnSearch</value>
-  </data>
-  <data name="&gt;&gt;btnSearch.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnSearch.Parent" xml:space="preserve">
-    <value>splitContainerMain.Panel1</value>
-  </data>
-  <data name="&gt;&gt;btnSearch.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="listBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left</value>
   </data>
   <metadata name="cmList.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>196, 17</value>
@@ -201,53 +183,26 @@
   <data name="&gt;&gt;cmList.Type" xml:space="preserve">
     <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="listBoxLists.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 64</value>
+  <data name="listBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 26</value>
   </data>
-  <data name="listBoxLists.Size" type="System.Drawing.Size, System.Drawing">
-    <value>191, 472</value>
+  <data name="listBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>202, 524</value>
   </data>
-  <data name="listBoxLists.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="listBox.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
-  <data name="listBoxLists.ToolTip" xml:space="preserve">
-    <value>Elige una lista de la lista</value>
+  <data name="&gt;&gt;listBox.Name" xml:space="preserve">
+    <value>listBox</value>
   </data>
-  <data name="&gt;&gt;listBoxLists.Name" xml:space="preserve">
-    <value>listBoxLists</value>
-  </data>
-  <data name="&gt;&gt;listBoxLists.Type" xml:space="preserve">
+  <data name="&gt;&gt;listBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;listBoxLists.Parent" xml:space="preserve">
+  <data name="&gt;&gt;listBox.Parent" xml:space="preserve">
     <value>splitContainerMain.Panel1</value>
   </data>
-  <data name="&gt;&gt;listBoxLists.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="tbSearch.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
-  </data>
-  <data name="tbSearch.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 20</value>
-  </data>
-  <data name="tbSearch.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="tbSearch.ToolTip" xml:space="preserve">
-    <value>Introducir nombre de la lista</value>
-  </data>
-  <data name="&gt;&gt;tbSearch.Name" xml:space="preserve">
-    <value>tbSearch</value>
-  </data>
-  <data name="&gt;&gt;tbSearch.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tbSearch.Parent" xml:space="preserve">
-    <value>splitContainerMain.Panel1</value>
-  </data>
-  <data name="&gt;&gt;tbSearch.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;listBox.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="&gt;&gt;splitContainerMain.Panel1.Name" xml:space="preserve">
     <value>splitContainerMain.Panel1</value>
@@ -259,6 +214,30 @@
     <value>splitContainerMain</value>
   </data>
   <data name="&gt;&gt;splitContainerMain.Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="todoListPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="todoListPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 51</value>
+  </data>
+  <data name="todoListPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>644, 503</value>
+  </data>
+  <data name="todoListPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;todoListPanel.Name" xml:space="preserve">
+    <value>todoListPanel</value>
+  </data>
+  <data name="&gt;&gt;todoListPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;todoListPanel.Parent" xml:space="preserve">
+    <value>splitContainerMain.Panel2</value>
+  </data>
+  <data name="&gt;&gt;todoListPanel.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="btnPurple.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
@@ -286,7 +265,7 @@
     <value>splitContainerMain.Panel2</value>
   </data>
   <data name="&gt;&gt;btnPurple.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="btnGreen.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -313,7 +292,7 @@
     <value>splitContainerMain.Panel2</value>
   </data>
   <data name="&gt;&gt;btnGreen.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="btnBlue.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -340,7 +319,7 @@
     <value>splitContainerMain.Panel2</value>
   </data>
   <data name="&gt;&gt;btnBlue.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="lbListName.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -367,7 +346,7 @@
     <value>splitContainerMain.Panel2</value>
   </data>
   <data name="&gt;&gt;lbListName.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="btnOrange.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -394,7 +373,7 @@
     <value>splitContainerMain.Panel2</value>
   </data>
   <data name="&gt;&gt;btnOrange.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="&gt;&gt;splitContainerMain.Panel2.Name" xml:space="preserve">
     <value>splitContainerMain.Panel2</value>
@@ -409,7 +388,7 @@
     <value>1</value>
   </data>
   <data name="splitContainerMain.Size" type="System.Drawing.Size, System.Drawing">
-    <value>826, 544</value>
+    <value>872, 561</value>
   </data>
   <data name="splitContainerMain.SplitterDistance" type="System.Int32, mscorlib">
     <value>217</value>
@@ -460,7 +439,7 @@
     <value>0, 24</value>
   </data>
   <data name="ts1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>826, 25</value>
+    <value>873, 25</value>
   </data>
   <data name="ts1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -484,13 +463,13 @@
     <value>122, 17</value>
   </metadata>
   <data name="tsmiNew.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>117, 22</value>
   </data>
   <data name="tsmiNew.Text" xml:space="preserve">
     <value>&amp;Nueva</value>
   </data>
   <data name="tsmiDelete.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>117, 22</value>
   </data>
   <data name="tsmiDelete.Text" xml:space="preserve">
     <value>&amp;Eliminar</value>
@@ -502,25 +481,25 @@
     <value>&amp;Lista</value>
   </data>
   <data name="tsmiOrange.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>116, 22</value>
   </data>
   <data name="tsmiOrange.Text" xml:space="preserve">
     <value>Na&amp;ranja</value>
   </data>
   <data name="tsmiBlue.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>116, 22</value>
   </data>
   <data name="tsmiBlue.Text" xml:space="preserve">
     <value>&amp;Azul</value>
   </data>
   <data name="tsmiGreen.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>116, 22</value>
   </data>
   <data name="tsmiGreen.Text" xml:space="preserve">
     <value>&amp;Verde</value>
   </data>
   <data name="tsmiPurple.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>116, 22</value>
   </data>
   <data name="tsmiPurple.Text" xml:space="preserve">
     <value>&amp;Morado</value>
@@ -532,13 +511,13 @@
     <value>&amp;Color</value>
   </data>
   <data name="tsmiSpanish.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>115, 22</value>
   </data>
   <data name="tsmiSpanish.Text" xml:space="preserve">
     <value>&amp;Español</value>
   </data>
   <data name="tsmiEnglish.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>115, 22</value>
   </data>
   <data name="tsmiEnglish.Text" xml:space="preserve">
     <value>&amp;Inglés</value>
@@ -553,7 +532,7 @@
     <value>0, 0</value>
   </data>
   <data name="ms1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>826, 24</value>
+    <value>873, 24</value>
   </data>
   <data name="ms1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -580,7 +559,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>826, 613</value>
+    <value>873, 622</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
