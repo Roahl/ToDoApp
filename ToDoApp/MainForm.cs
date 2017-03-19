@@ -25,9 +25,9 @@ namespace ToDoApp
 
         private void listSelection(object sender, EventArgs e)
         {
-            String name = listBox1.GetItemText(listBox1.SelectedItem);
+            String name = listBoxLists.GetItemText(listBoxLists.SelectedItem);
             lbListName.Text = name; 
-            foreach (Control c in splitContainer1.Panel2.Controls)
+            foreach (Control c in splitContainerMain.Panel2.Controls)
             {
                 if (c.GetType() == typeof(ToDoTable))
                 {
@@ -51,9 +51,9 @@ namespace ToDoApp
             if(result == DialogResult.OK)
             {
                 String name = nd.name + " - " + nd.date;
-                listBox1.Items.Add(name);
-                listBox1.SelectedIndex = listBox1.Items.Count-1;
-                splitContainer1.Panel2.Controls.Add(new ToDoTable() {Name = name,
+                listBoxLists.Items.Add(name);
+                listBoxLists.SelectedIndex = listBoxLists.Items.Count-1;
+                splitContainerMain.Panel2.Controls.Add(new ToDoTable() {Name = name,
                     Location = new Point(3, 41),
                     Size = new Size(600, 498) });
             }
@@ -61,28 +61,49 @@ namespace ToDoApp
 
         private void btnColor_Click(object sender, EventArgs e)
         {
-            switch (((Button)sender).Name)
+            try
             {
-                case "btnOrange":
-                    selectedColor = "orange";
-                    break;
-                case "btnGreen":
-                    selectedColor = "green";
-                    break;
-                case "btnBlue":
-                    selectedColor = "blue";
-                    break;
-                case "btnPurple":
-                    selectedColor = "purple";
-                    break;
+                switch (((Button)sender).Name)
+                {
+                    case "btnOrange":
+                        selectedColor = "orange";
+                        break;
+                    case "btnGreen":
+                        selectedColor = "green";
+                        break;
+                    case "btnBlue":
+                        selectedColor = "blue";
+                        break;
+                    case "btnPurple":
+                        selectedColor = "purple";
+                        break;
+                }
+            }
+            catch
+            {
+                switch (((ToolStripMenuItem)sender).Name)
+                {
+                    case "tsmiOrange":
+                        selectedColor = "orange";
+                        break;
+                    case "tsmiGreen":
+                        selectedColor = "green";
+                        break;
+                    case "tsmiBlue":
+                        selectedColor = "blue";
+                        break;
+                    case "tsmiPurple":
+                        selectedColor = "purple";
+                        break;
+                }
             }
             recolor(selectedColor);
         }
 
         private void recolor(string color)
         {
-            String name = listBox1.GetItemText(listBox1.SelectedItem);
-            foreach (Control c in splitContainer1.Panel2.Controls)
+            String name = listBoxLists.GetItemText(listBoxLists.SelectedItem);
+            foreach (Control c in splitContainerMain.Panel2.Controls)
             {
                 if (c.GetType() == typeof(ToDoTable))
                 {
@@ -94,7 +115,12 @@ namespace ToDoApp
             }
         }
 
-        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        private void deleteToDoList(object sender, EventArgs e)
+        {
+            listBoxLists.Items.Remove(listBoxLists.SelectedItem);
+        }
+
+        private void tsmiEnglish_Click(object sender, EventArgs e)
         {
 
         }

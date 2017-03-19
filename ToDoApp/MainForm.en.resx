@@ -117,470 +117,133 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="splitContainerMain.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 57</value>
-  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btnAdd.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
+  <data name="btnAdd.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="btnAdd.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 35</value>
-  </data>
-  <data name="btnAdd.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="btnAdd.Size" type="System.Drawing.Size, System.Drawing">
-    <value>30, 23</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btnAdd.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <metadata name="tt.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>282, 17</value>
-  </metadata>
   <data name="btnAdd.ToolTip" xml:space="preserve">
-    <value>Crear nueva lista</value>
+    <value>Create new list</value>
   </data>
-  <data name="&gt;&gt;btnAdd.Name" xml:space="preserve">
-    <value>btnAdd</value>
-  </data>
-  <data name="&gt;&gt;btnAdd.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnAdd.Parent" xml:space="preserve">
-    <value>splitContainerMain.Panel1</value>
-  </data>
-  <data name="&gt;&gt;btnAdd.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btnSearch.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btnSearch.Location" type="System.Drawing.Point, System.Drawing">
-    <value>175, 10</value>
-  </data>
-  <data name="btnSearch.Size" type="System.Drawing.Size, System.Drawing">
-    <value>28, 23</value>
-  </data>
-  <data name="btnSearch.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="btnSearch.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="btnSearch.ToolTip" xml:space="preserve">
-    <value>Buscar lista</value>
+    <value>Search for a list</value>
   </data>
-  <data name="&gt;&gt;btnSearch.Name" xml:space="preserve">
-    <value>btnSearch</value>
-  </data>
-  <data name="&gt;&gt;btnSearch.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnSearch.Parent" xml:space="preserve">
-    <value>splitContainerMain.Panel1</value>
-  </data>
-  <data name="&gt;&gt;btnSearch.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <metadata name="cmList.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>196, 17</value>
-  </metadata>
-  <data name="ctsmiDelete.Size" type="System.Drawing.Size, System.Drawing">
-    <value>117, 22</value>
-  </data>
-  <data name="ctsmiDelete.Text" xml:space="preserve">
-    <value>&amp;Eliminar</value>
-  </data>
-  <data name="cmList.Size" type="System.Drawing.Size, System.Drawing">
-    <value>118, 26</value>
-  </data>
-  <data name="&gt;&gt;cmList.Name" xml:space="preserve">
-    <value>cmList</value>
-  </data>
-  <data name="&gt;&gt;cmList.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="listBoxLists.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 64</value>
-  </data>
-  <data name="listBoxLists.Size" type="System.Drawing.Size, System.Drawing">
-    <value>191, 472</value>
-  </data>
-  <data name="listBoxLists.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="cmList.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="listBoxLists.ToolTip" xml:space="preserve">
-    <value>Elige una lista de la lista</value>
-  </data>
-  <data name="&gt;&gt;listBoxLists.Name" xml:space="preserve">
-    <value>listBoxLists</value>
-  </data>
-  <data name="&gt;&gt;listBoxLists.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;listBoxLists.Parent" xml:space="preserve">
-    <value>splitContainerMain.Panel1</value>
-  </data>
-  <data name="&gt;&gt;listBoxLists.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="tbSearch.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
-  </data>
-  <data name="tbSearch.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 20</value>
-  </data>
-  <data name="tbSearch.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+    <value>Select a list from the list</value>
   </data>
   <data name="tbSearch.ToolTip" xml:space="preserve">
-    <value>Introducir nombre de la lista</value>
+    <value>Type in list name</value>
   </data>
-  <data name="&gt;&gt;tbSearch.Name" xml:space="preserve">
-    <value>tbSearch</value>
+  <data name="splitContainerMain.Panel1.ToolTip" xml:space="preserve">
+    <value />
   </data>
-  <data name="&gt;&gt;tbSearch.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tbSearch.Parent" xml:space="preserve">
-    <value>splitContainerMain.Panel1</value>
-  </data>
-  <data name="&gt;&gt;tbSearch.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;splitContainerMain.Panel1.Name" xml:space="preserve">
-    <value>splitContainerMain.Panel1</value>
-  </data>
-  <data name="&gt;&gt;splitContainerMain.Panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;splitContainerMain.Panel1.Parent" xml:space="preserve">
-    <value>splitContainerMain</value>
-  </data>
-  <data name="&gt;&gt;splitContainerMain.Panel1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btnPurple.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btnPurple.Location" type="System.Drawing.Point, System.Drawing">
-    <value>129, 10</value>
-  </data>
-  <data name="btnPurple.Size" type="System.Drawing.Size, System.Drawing">
-    <value>36, 34</value>
-  </data>
-  <data name="btnPurple.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+  <data name="btnPurple.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="btnPurple.ToolTip" xml:space="preserve">
-    <value>Cambiar color a morado</value>
+    <value>Change color to purple</value>
   </data>
-  <data name="&gt;&gt;btnPurple.Name" xml:space="preserve">
-    <value>btnPurple</value>
-  </data>
-  <data name="&gt;&gt;btnPurple.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnPurple.Parent" xml:space="preserve">
-    <value>splitContainerMain.Panel2</value>
-  </data>
-  <data name="&gt;&gt;btnPurple.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btnGreen.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btnGreen.Location" type="System.Drawing.Point, System.Drawing">
-    <value>87, 10</value>
-  </data>
-  <data name="btnGreen.Size" type="System.Drawing.Size, System.Drawing">
-    <value>36, 34</value>
-  </data>
-  <data name="btnGreen.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+  <data name="btnGreen.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="btnGreen.ToolTip" xml:space="preserve">
-    <value>Cambiar color a verde</value>
+    <value>Change color to green</value>
   </data>
-  <data name="&gt;&gt;btnGreen.Name" xml:space="preserve">
-    <value>btnGreen</value>
-  </data>
-  <data name="&gt;&gt;btnGreen.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnGreen.Parent" xml:space="preserve">
-    <value>splitContainerMain.Panel2</value>
-  </data>
-  <data name="&gt;&gt;btnGreen.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="btnBlue.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btnBlue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>45, 10</value>
-  </data>
-  <data name="btnBlue.Size" type="System.Drawing.Size, System.Drawing">
-    <value>36, 34</value>
-  </data>
-  <data name="btnBlue.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="btnBlue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="btnBlue.ToolTip" xml:space="preserve">
-    <value>Cambiar color a azul</value>
+    <value>Change color to blue</value>
   </data>
-  <data name="&gt;&gt;btnBlue.Name" xml:space="preserve">
-    <value>btnBlue</value>
+  <data name="lbListName.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;btnBlue.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="lbListName.ToolTip" xml:space="preserve">
+    <value />
   </data>
-  <data name="&gt;&gt;btnBlue.Parent" xml:space="preserve">
-    <value>splitContainerMain.Panel2</value>
-  </data>
-  <data name="&gt;&gt;btnBlue.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="lbListName.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lbListName.Font" type="System.Drawing.Font, System.Drawing">
-    <value>MS Reference Sans Serif, 15.75pt</value>
-  </data>
-  <data name="lbListName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>171, 12</value>
-  </data>
-  <data name="lbListName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 26</value>
-  </data>
-  <data name="lbListName.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;lbListName.Name" xml:space="preserve">
-    <value>lbListName</value>
-  </data>
-  <data name="&gt;&gt;lbListName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbListName.Parent" xml:space="preserve">
-    <value>splitContainerMain.Panel2</value>
-  </data>
-  <data name="&gt;&gt;lbListName.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="btnOrange.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btnOrange.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 10</value>
-  </data>
-  <data name="btnOrange.Size" type="System.Drawing.Size, System.Drawing">
-    <value>36, 34</value>
-  </data>
-  <data name="btnOrange.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="btnOrange.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="btnOrange.ToolTip" xml:space="preserve">
-    <value>Cambiar color a naranja</value>
+    <value>Change color to orange</value>
   </data>
-  <data name="&gt;&gt;btnOrange.Name" xml:space="preserve">
-    <value>btnOrange</value>
+  <data name="splitContainerMain.Panel2.ToolTip" xml:space="preserve">
+    <value />
   </data>
-  <data name="&gt;&gt;btnOrange.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnOrange.Parent" xml:space="preserve">
-    <value>splitContainerMain.Panel2</value>
-  </data>
-  <data name="&gt;&gt;btnOrange.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;splitContainerMain.Panel2.Name" xml:space="preserve">
-    <value>splitContainerMain.Panel2</value>
-  </data>
-  <data name="&gt;&gt;splitContainerMain.Panel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;splitContainerMain.Panel2.Parent" xml:space="preserve">
-    <value>splitContainerMain</value>
-  </data>
-  <data name="&gt;&gt;splitContainerMain.Panel2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="splitContainerMain.Size" type="System.Drawing.Size, System.Drawing">
-    <value>826, 544</value>
-  </data>
-  <data name="splitContainerMain.SplitterDistance" type="System.Int32, mscorlib">
-    <value>217</value>
-  </data>
-  <data name="splitContainerMain.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;splitContainerMain.Name" xml:space="preserve">
-    <value>splitContainerMain</value>
-  </data>
-  <data name="&gt;&gt;splitContainerMain.Type" xml:space="preserve">
-    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;splitContainerMain.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;splitContainerMain.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <metadata name="ts1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <data name="tsbNew.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
-  </data>
-  <data name="tsbNew.Size" type="System.Drawing.Size, System.Drawing">
-    <value>23, 22</value>
-  </data>
-  <data name="tsbNew.Text" xml:space="preserve">
-    <value>toolStripButton1</value>
+  <data name="splitContainerMain.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="tsbNew.ToolTipText" xml:space="preserve">
-    <value>Crear nueva lista</value>
-  </data>
-  <data name="tsbDelete.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
-  </data>
-  <data name="tsbDelete.Size" type="System.Drawing.Size, System.Drawing">
-    <value>23, 22</value>
-  </data>
-  <data name="tsbDelete.Text" xml:space="preserve">
-    <value>toolStripButton2</value>
+    <value>Create new list</value>
   </data>
   <data name="tsbDelete.ToolTipText" xml:space="preserve">
-    <value>Eliminar lista</value>
+    <value>Delete list</value>
   </data>
-  <data name="ts1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 24</value>
+  <data name="ts1.ToolTip" xml:space="preserve">
+    <value />
   </data>
-  <data name="ts1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>826, 25</value>
-  </data>
-  <data name="ts1.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="ts1.Text" xml:space="preserve">
-    <value>ts1</value>
-  </data>
-  <data name="&gt;&gt;ts1.Name" xml:space="preserve">
-    <value>ts1</value>
-  </data>
-  <data name="&gt;&gt;ts1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ts1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;ts1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <metadata name="ms1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>122, 17</value>
-  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="tsmiNew.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>107, 22</value>
   </data>
   <data name="tsmiNew.Text" xml:space="preserve">
-    <value>&amp;Nueva</value>
+    <value>&amp;New</value>
   </data>
   <data name="tsmiDelete.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>107, 22</value>
   </data>
   <data name="tsmiDelete.Text" xml:space="preserve">
-    <value>&amp;Eliminar</value>
+    <value>&amp;Delete</value>
   </data>
   <data name="tsmiList.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 20</value>
+    <value>37, 20</value>
   </data>
   <data name="tsmiList.Text" xml:space="preserve">
-    <value>&amp;Lista</value>
+    <value>&amp;List</value>
   </data>
   <data name="tsmiOrange.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>113, 22</value>
   </data>
   <data name="tsmiOrange.Text" xml:space="preserve">
-    <value>Na&amp;ranja</value>
+    <value>O&amp;range</value>
   </data>
   <data name="tsmiBlue.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>113, 22</value>
   </data>
   <data name="tsmiBlue.Text" xml:space="preserve">
-    <value>&amp;Azul</value>
+    <value>&amp;Blue</value>
   </data>
   <data name="tsmiGreen.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>113, 22</value>
   </data>
   <data name="tsmiGreen.Text" xml:space="preserve">
-    <value>&amp;Verde</value>
+    <value>&amp;Green</value>
   </data>
   <data name="tsmiPurple.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>113, 22</value>
   </data>
   <data name="tsmiPurple.Text" xml:space="preserve">
-    <value>&amp;Morado</value>
-  </data>
-  <data name="tsmiColor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>48, 20</value>
-  </data>
-  <data name="tsmiColor.Text" xml:space="preserve">
-    <value>&amp;Color</value>
-  </data>
-  <data name="tsmiSpanish.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>&amp;Purple</value>
   </data>
   <data name="tsmiSpanish.Text" xml:space="preserve">
-    <value>&amp;Español</value>
-  </data>
-  <data name="tsmiEnglish.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>&amp;Spanish</value>
   </data>
   <data name="tsmiEnglish.Text" xml:space="preserve">
-    <value>&amp;Inglés</value>
+    <value>&amp;English</value>
   </data>
   <data name="tsmiLanguage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 20</value>
+    <value>71, 20</value>
   </data>
   <data name="tsmiLanguage.Text" xml:space="preserve">
-    <value>&amp;Lenguaje</value>
+    <value>&amp;Language</value>
   </data>
-  <data name="ms1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="ms1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>826, 24</value>
-  </data>
-  <data name="ms1.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="ms1.Text" xml:space="preserve">
-    <value>ms1</value>
-  </data>
-  <data name="&gt;&gt;ms1.Name" xml:space="preserve">
-    <value>ms1</value>
-  </data>
-  <data name="&gt;&gt;ms1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ms1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;ms1.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>826, 613</value>
+  <data name="ms1.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1278,103 +941,7 @@
         AAD//wAA
 </value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>To Do</value>
-  </data>
-  <data name="&gt;&gt;ctsmiDelete.Name" xml:space="preserve">
-    <value>ctsmiDelete</value>
-  </data>
-  <data name="&gt;&gt;ctsmiDelete.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tsbNew.Name" xml:space="preserve">
-    <value>tsbNew</value>
-  </data>
-  <data name="&gt;&gt;tsbNew.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tsbDelete.Name" xml:space="preserve">
-    <value>tsbDelete</value>
-  </data>
-  <data name="&gt;&gt;tsbDelete.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tsmiList.Name" xml:space="preserve">
-    <value>tsmiList</value>
-  </data>
-  <data name="&gt;&gt;tsmiList.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tsmiNew.Name" xml:space="preserve">
-    <value>tsmiNew</value>
-  </data>
-  <data name="&gt;&gt;tsmiNew.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tsmiDelete.Name" xml:space="preserve">
-    <value>tsmiDelete</value>
-  </data>
-  <data name="&gt;&gt;tsmiDelete.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tsmiColor.Name" xml:space="preserve">
-    <value>tsmiColor</value>
-  </data>
-  <data name="&gt;&gt;tsmiColor.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tsmiOrange.Name" xml:space="preserve">
-    <value>tsmiOrange</value>
-  </data>
-  <data name="&gt;&gt;tsmiOrange.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tsmiBlue.Name" xml:space="preserve">
-    <value>tsmiBlue</value>
-  </data>
-  <data name="&gt;&gt;tsmiBlue.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tsmiGreen.Name" xml:space="preserve">
-    <value>tsmiGreen</value>
-  </data>
-  <data name="&gt;&gt;tsmiGreen.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tsmiPurple.Name" xml:space="preserve">
-    <value>tsmiPurple</value>
-  </data>
-  <data name="&gt;&gt;tsmiPurple.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tsmiLanguage.Name" xml:space="preserve">
-    <value>tsmiLanguage</value>
-  </data>
-  <data name="&gt;&gt;tsmiLanguage.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tsmiSpanish.Name" xml:space="preserve">
-    <value>tsmiSpanish</value>
-  </data>
-  <data name="&gt;&gt;tsmiSpanish.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tsmiEnglish.Name" xml:space="preserve">
-    <value>tsmiEnglish</value>
-  </data>
-  <data name="&gt;&gt;tsmiEnglish.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tt.Name" xml:space="preserve">
-    <value>tt</value>
-  </data>
-  <data name="&gt;&gt;tt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>MainForm</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="$this.ToolTip" xml:space="preserve">
+    <value />
   </data>
 </root>
