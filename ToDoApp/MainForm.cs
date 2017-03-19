@@ -147,5 +147,13 @@ namespace ToDoApp
         {
 
         }
+
+        private void tsmiSpanish_Click(object sender, EventArgs e)
+        {
+            Thread.CurrentThread.CurrentCulture = new CultureInfo("");
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("");
+            Controls.Clear();
+            InitializeComponent();
+        }
     }
 }

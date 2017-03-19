@@ -21,10 +21,22 @@ namespace ToDoApp
 
         private void SendName(object sender, EventArgs e)
         {
-            this.name = tbName.Text;
-            this.date = DateTime.Now.ToShortDateString();
-            this.DialogResult = DialogResult.OK;
-            this.Close();
+            if (tbName.Text != "")
+            {
+                this.name = tbName.Text;
+                this.date = DateTime.Now.ToShortDateString();
+                this.DialogResult = DialogResult.OK;
+                this.Close();
+            }
+            else
+            {
+                tbName.BackColor = System.Drawing.Color.LightCoral;
+            }
+        }
+
+        private void paintWhite(object sender, EventArgs e)
+        {
+            tbName.BackColor = System.Drawing.SystemColors.Window;
         }
     }
 }

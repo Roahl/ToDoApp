@@ -28,9 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NameDialog));
             this.label = new System.Windows.Forms.Label();
             this.tbName = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnGuardar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label
@@ -44,29 +45,35 @@
             // 
             // tbName
             // 
+            this.tbName.BackColor = System.Drawing.SystemColors.Window;
             this.tbName.Location = new System.Drawing.Point(138, 28);
             this.tbName.Name = "tbName";
             this.tbName.Size = new System.Drawing.Size(179, 20);
             this.tbName.TabIndex = 1;
+            this.tbName.GotFocus += new System.EventHandler(this.paintWhite);
             // 
-            // button1
+            // btnGuardar
             // 
-            this.button1.Location = new System.Drawing.Point(242, 66);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Guardar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.SendName);
+            this.btnGuardar.Location = new System.Drawing.Point(242, 66);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(75, 23);
+            this.btnGuardar.TabIndex = 2;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.SendName);
             // 
             // NameDialog
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(329, 101);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.tbName);
             this.Controls.Add(this.label);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(345, 140);
+            this.MinimumSize = new System.Drawing.Size(345, 140);
             this.Name = "NameDialog";
             this.Text = "Name";
             this.ResumeLayout(false);
@@ -78,6 +85,6 @@
 
         private System.Windows.Forms.Label label;
         private System.Windows.Forms.TextBox tbName;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnGuardar;
     }
 }

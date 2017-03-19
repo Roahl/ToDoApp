@@ -74,12 +74,15 @@
             // 
             // splitContainerMain.Panel1
             // 
+            resources.ApplyResources(this.splitContainerMain.Panel1, "splitContainerMain.Panel1");
             this.splitContainerMain.Panel1.BackColor = System.Drawing.SystemColors.Control;
             this.splitContainerMain.Panel1.Controls.Add(this.btnAdd);
             this.splitContainerMain.Panel1.Controls.Add(this.listBox);
+            this.tt.SetToolTip(this.splitContainerMain.Panel1, resources.GetString("splitContainerMain.Panel1.ToolTip"));
             // 
             // splitContainerMain.Panel2
             // 
+            resources.ApplyResources(this.splitContainerMain.Panel2, "splitContainerMain.Panel2");
             this.splitContainerMain.Panel2.BackColor = System.Drawing.SystemColors.Control;
             this.splitContainerMain.Panel2.Controls.Add(this.todoListPanel);
             this.splitContainerMain.Panel2.Controls.Add(this.btnPurple);
@@ -87,11 +90,13 @@
             this.splitContainerMain.Panel2.Controls.Add(this.btnBlue);
             this.splitContainerMain.Panel2.Controls.Add(this.lbListName);
             this.splitContainerMain.Panel2.Controls.Add(this.btnOrange);
+            this.tt.SetToolTip(this.splitContainerMain.Panel2, resources.GetString("splitContainerMain.Panel2.ToolTip"));
+            this.tt.SetToolTip(this.splitContainerMain, resources.GetString("splitContainerMain.ToolTip"));
             // 
             // btnAdd
             // 
-            this.btnAdd.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.btnAdd, "btnAdd");
+            this.btnAdd.FlatAppearance.BorderSize = 0;
             this.btnAdd.Image = global::ToDoApp.Properties.Resources.add;
             this.btnAdd.Name = "btnAdd";
             this.tt.SetToolTip(this.btnAdd, resources.GetString("btnAdd.ToolTip"));
@@ -105,20 +110,22 @@
             this.listBox.ContextMenuStrip = this.cmList;
             this.listBox.FormattingEnabled = true;
             this.listBox.Name = "listBox";
+            this.tt.SetToolTip(this.listBox, resources.GetString("listBox.ToolTip"));
             this.listBox.SelectedIndexChanged += new System.EventHandler(this.listSelection);
             // 
             // cmList
             // 
+            resources.ApplyResources(this.cmList, "cmList");
             this.cmList.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ctsmiDelete});
             this.cmList.Name = "cmList";
-            resources.ApplyResources(this.cmList, "cmList");
+            this.tt.SetToolTip(this.cmList, resources.GetString("cmList.ToolTip"));
             // 
             // ctsmiDelete
             // 
+            resources.ApplyResources(this.ctsmiDelete, "ctsmiDelete");
             this.ctsmiDelete.Image = global::ToDoApp.Properties.Resources.DeleteKPI_16x;
             this.ctsmiDelete.Name = "ctsmiDelete";
-            resources.ApplyResources(this.ctsmiDelete, "ctsmiDelete");
             this.ctsmiDelete.Click += new System.EventHandler(this.deleteToDoList);
             // 
             // todoListPanel
@@ -126,11 +133,12 @@
             resources.ApplyResources(this.todoListPanel, "todoListPanel");
             this.todoListPanel.BackColor = System.Drawing.SystemColors.Control;
             this.todoListPanel.Name = "todoListPanel";
+            this.tt.SetToolTip(this.todoListPanel, resources.GetString("todoListPanel.ToolTip"));
             // 
             // btnPurple
             // 
-            this.btnPurple.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.btnPurple, "btnPurple");
+            this.btnPurple.FlatAppearance.BorderSize = 0;
             this.btnPurple.ForeColor = System.Drawing.Color.White;
             this.btnPurple.Image = global::ToDoApp.Properties.Resources.purple;
             this.btnPurple.Name = "btnPurple";
@@ -140,8 +148,8 @@
             // 
             // btnGreen
             // 
-            this.btnGreen.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.btnGreen, "btnGreen");
+            this.btnGreen.FlatAppearance.BorderSize = 0;
             this.btnGreen.Image = global::ToDoApp.Properties.Resources.green;
             this.btnGreen.Name = "btnGreen";
             this.tt.SetToolTip(this.btnGreen, resources.GetString("btnGreen.ToolTip"));
@@ -150,8 +158,8 @@
             // 
             // btnBlue
             // 
-            this.btnBlue.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.btnBlue, "btnBlue");
+            this.btnBlue.FlatAppearance.BorderSize = 0;
             this.btnBlue.Image = global::ToDoApp.Properties.Resources.blue;
             this.btnBlue.Name = "btnBlue";
             this.tt.SetToolTip(this.btnBlue, resources.GetString("btnBlue.ToolTip"));
@@ -162,11 +170,12 @@
             // 
             resources.ApplyResources(this.lbListName, "lbListName");
             this.lbListName.Name = "lbListName";
+            this.tt.SetToolTip(this.lbListName, resources.GetString("lbListName.ToolTip"));
             // 
             // btnOrange
             // 
-            this.btnOrange.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.btnOrange, "btnOrange");
+            this.btnOrange.FlatAppearance.BorderSize = 0;
             this.btnOrange.Image = global::ToDoApp.Properties.Resources.orange1;
             this.btnOrange.Name = "btnOrange";
             this.tt.SetToolTip(this.btnOrange, resources.GetString("btnOrange.ToolTip"));
@@ -175,116 +184,119 @@
             // 
             // ts1
             // 
+            resources.ApplyResources(this.ts1, "ts1");
             this.ts1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsbNew,
             this.tsbDelete});
-            resources.ApplyResources(this.ts1, "ts1");
             this.ts1.Name = "ts1";
+            this.tt.SetToolTip(this.ts1, resources.GetString("ts1.ToolTip"));
             // 
             // tsbNew
             // 
+            resources.ApplyResources(this.tsbNew, "tsbNew");
             this.tsbNew.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.tsbNew.Image = global::ToDoApp.Properties.Resources.NewItem_16x;
-            resources.ApplyResources(this.tsbNew, "tsbNew");
             this.tsbNew.Name = "tsbNew";
             this.tsbNew.Click += new System.EventHandler(this.newToDoList);
             // 
             // tsbDelete
             // 
+            resources.ApplyResources(this.tsbDelete, "tsbDelete");
             this.tsbDelete.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.tsbDelete.Image = global::ToDoApp.Properties.Resources.DeleteKPI_16x;
-            resources.ApplyResources(this.tsbDelete, "tsbDelete");
             this.tsbDelete.Name = "tsbDelete";
             this.tsbDelete.Click += new System.EventHandler(this.deleteToDoList);
             // 
             // ms1
             // 
+            resources.ApplyResources(this.ms1, "ms1");
             this.ms1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmiList,
             this.tsmiColor,
             this.tsmiLanguage});
-            resources.ApplyResources(this.ms1, "ms1");
             this.ms1.Name = "ms1";
+            this.tt.SetToolTip(this.ms1, resources.GetString("ms1.ToolTip"));
             // 
             // tsmiList
             // 
+            resources.ApplyResources(this.tsmiList, "tsmiList");
             this.tsmiList.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmiNew,
             this.tsmiDelete});
             this.tsmiList.Name = "tsmiList";
-            resources.ApplyResources(this.tsmiList, "tsmiList");
             // 
             // tsmiNew
             // 
+            resources.ApplyResources(this.tsmiNew, "tsmiNew");
             this.tsmiNew.Image = global::ToDoApp.Properties.Resources.NewItem_16x;
             this.tsmiNew.Name = "tsmiNew";
-            resources.ApplyResources(this.tsmiNew, "tsmiNew");
             this.tsmiNew.Click += new System.EventHandler(this.newToDoList);
             // 
             // tsmiDelete
             // 
+            resources.ApplyResources(this.tsmiDelete, "tsmiDelete");
             this.tsmiDelete.Image = global::ToDoApp.Properties.Resources.DeleteKPI_16x;
             this.tsmiDelete.Name = "tsmiDelete";
-            resources.ApplyResources(this.tsmiDelete, "tsmiDelete");
             this.tsmiDelete.Click += new System.EventHandler(this.deleteToDoList);
             // 
             // tsmiColor
             // 
+            resources.ApplyResources(this.tsmiColor, "tsmiColor");
             this.tsmiColor.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmiOrange,
             this.tsmiBlue,
             this.tsmiGreen,
             this.tsmiPurple});
             this.tsmiColor.Name = "tsmiColor";
-            resources.ApplyResources(this.tsmiColor, "tsmiColor");
             // 
             // tsmiOrange
             // 
+            resources.ApplyResources(this.tsmiOrange, "tsmiOrange");
             this.tsmiOrange.Image = global::ToDoApp.Properties.Resources.orange1;
             this.tsmiOrange.Name = "tsmiOrange";
-            resources.ApplyResources(this.tsmiOrange, "tsmiOrange");
             this.tsmiOrange.Click += new System.EventHandler(this.btnColor_Click);
             // 
             // tsmiBlue
             // 
+            resources.ApplyResources(this.tsmiBlue, "tsmiBlue");
             this.tsmiBlue.Image = global::ToDoApp.Properties.Resources.blue;
             this.tsmiBlue.Name = "tsmiBlue";
-            resources.ApplyResources(this.tsmiBlue, "tsmiBlue");
             this.tsmiBlue.Click += new System.EventHandler(this.btnColor_Click);
             // 
             // tsmiGreen
             // 
+            resources.ApplyResources(this.tsmiGreen, "tsmiGreen");
             this.tsmiGreen.Image = global::ToDoApp.Properties.Resources.green;
             this.tsmiGreen.Name = "tsmiGreen";
-            resources.ApplyResources(this.tsmiGreen, "tsmiGreen");
             this.tsmiGreen.Click += new System.EventHandler(this.btnColor_Click);
             // 
             // tsmiPurple
             // 
+            resources.ApplyResources(this.tsmiPurple, "tsmiPurple");
             this.tsmiPurple.Image = global::ToDoApp.Properties.Resources.purple;
             this.tsmiPurple.Name = "tsmiPurple";
-            resources.ApplyResources(this.tsmiPurple, "tsmiPurple");
             this.tsmiPurple.Click += new System.EventHandler(this.btnColor_Click);
             // 
             // tsmiLanguage
             // 
+            resources.ApplyResources(this.tsmiLanguage, "tsmiLanguage");
             this.tsmiLanguage.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmiSpanish,
             this.tsmiEnglish});
             this.tsmiLanguage.Name = "tsmiLanguage";
-            resources.ApplyResources(this.tsmiLanguage, "tsmiLanguage");
             // 
             // tsmiSpanish
             // 
+            resources.ApplyResources(this.tsmiSpanish, "tsmiSpanish");
             this.tsmiSpanish.Image = global::ToDoApp.Properties.Resources.ES;
             this.tsmiSpanish.Name = "tsmiSpanish";
-            resources.ApplyResources(this.tsmiSpanish, "tsmiSpanish");
+            this.tsmiSpanish.Click += new System.EventHandler(this.tsmiSpanish_Click);
             // 
             // tsmiEnglish
             // 
+            resources.ApplyResources(this.tsmiEnglish, "tsmiEnglish");
             this.tsmiEnglish.Image = global::ToDoApp.Properties.Resources.GB;
             this.tsmiEnglish.Name = "tsmiEnglish";
-            resources.ApplyResources(this.tsmiEnglish, "tsmiEnglish");
             this.tsmiEnglish.Click += new System.EventHandler(this.tsmiEnglish_Click);
             // 
             // MainForm
@@ -296,6 +308,7 @@
             this.Controls.Add(this.splitContainerMain);
             this.MainMenuStrip = this.ms1;
             this.Name = "MainForm";
+            this.tt.SetToolTip(this, resources.GetString("$this.ToolTip"));
             this.splitContainerMain.Panel1.ResumeLayout(false);
             this.splitContainerMain.Panel2.ResumeLayout(false);
             this.splitContainerMain.Panel2.PerformLayout();
