@@ -13,6 +13,9 @@ using ToDoUserControl;
 
 namespace ToDoApp
 {
+    /// <summary>
+    /// Main form of the project
+    /// </summary>
     public partial class MainForm : Form
     {
         private string selectedColor;
