@@ -143,11 +143,6 @@ namespace ToDoApp
             InitializeComponent();
         }
 
-        private void search(object sender, KeyEventArgs e)
-        {
-
-        }
-
         private void tsmiSpanish_Click(object sender, EventArgs e)
         {
             Thread.CurrentThread.CurrentCulture = new CultureInfo("");
