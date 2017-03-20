@@ -25,6 +25,11 @@ namespace ToDoApp
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Method called when selecting an item from the listbox
+        /// </summary>
+        /// <param name="sender">the object that creates the event</param>
+        /// <param name="e">parameters of the event</param>
         private void listSelection(object sender, EventArgs e)
         {
             String name = listBox.GetItemText(listBox.SelectedItem);
@@ -51,7 +56,12 @@ namespace ToDoApp
                 }
             }            
         }
-
+        /// <summary>
+        /// Method called when clicked "new list" button either on toolbar, button
+        /// or menu item
+        /// </summary>
+        /// <param name="sender">the object that creates the event</param>
+        /// <param name="e">parameters of the event</param>
         private void newToDoList(object sender, EventArgs e)
         {
             NameDialog nd = new NameDialog();
@@ -67,7 +77,11 @@ namespace ToDoApp
                     Dock = DockStyle.Fill });
             }
         }
-
+        /// <summary>
+        /// Method called by any of the buttons that changes color
+        /// </summary>
+        /// <param name="sender">the object that creates the event</param>
+        /// <param name="e">parameters of the event</param>
         private void btnColor_Click(object sender, EventArgs e)
         {
             try
@@ -108,7 +122,10 @@ namespace ToDoApp
             }
             recolor(selectedColor);
         }
-
+        /// <summary>
+        /// method called to recolor the user control and every text box in it
+        /// </summary>
+        /// <param name="color">string containing the color</param>
         private void recolor(string color)
         {
             String name = listBox.GetItemText(listBox.SelectedItem);
@@ -130,11 +147,21 @@ namespace ToDoApp
             }
         }
 
+        /// <summary>
+        /// Method called by any delete button to remove the selected list
+        /// </summary>
+        /// <param name="sender">the object that creates the event</param>
+        /// <param name="e">event arguments</param>
         private void deleteToDoList(object sender, EventArgs e)
         {
             listBox.Items.Remove(listBox.SelectedItem);
         }
 
+        /// <summary>
+        /// Changes language to english
+        /// </summary>
+        /// <param name="sender">the object that creates the event</param>
+        /// <param name="e">event arguments</param>
         private void tsmiEnglish_Click(object sender, EventArgs e)
         {
             Thread.CurrentThread.CurrentCulture = new CultureInfo("en");
@@ -142,7 +169,11 @@ namespace ToDoApp
             Controls.Clear();
             InitializeComponent();
         }
-
+        /// <summary>
+        /// Changes language to default
+        /// </summary>
+        /// <param name="sender">the object that creates the event</param>
+        /// <param name="e">event arguments</param>
         private void tsmiSpanish_Click(object sender, EventArgs e)
         {
             Thread.CurrentThread.CurrentCulture = new CultureInfo("");
